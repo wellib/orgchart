@@ -1,0 +1,14 @@
+orgchart:
+  version: VERSION
+  css:
+    theme:
+      css/orgchart.css: {}
+  js:
+    js/jquery.orgchart.js: {}
+    js/orgchart.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal.ajax
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once

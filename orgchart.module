@@ -1,0 +1,30 @@
+<?php
+
+/**
+ * @file
+ * Contains orgchart.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+
+/**
+ * Implements hook_theme().
+ */
+function orgchart_theme() {
+  return array(
+    'orgchart_block' => array(
+      'render element' => 'content',
+    ),
+  );
+}
+
+
+/**
+ * Implements hook_theme().
+ */
+function template_preprocess_orgchart_block(&$variables) {
+  $config = \Drupal::config('orgchart.settings');
+  $settings = $config->get();
+  $variables['content'] = array('output' => 'block');
+}

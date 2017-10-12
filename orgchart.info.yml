@@ -1,0 +1,5 @@
+name: orgchart
+type: module
+description: orgchart block
+core: 8.x
+package: Custom

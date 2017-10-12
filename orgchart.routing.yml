@@ -1,0 +1,7 @@
+orgchart.on:
+  path: '/orgchart'
+  defaults:
+    _title: 'orgchart'
+    _controller: '\Drupal\orgchart\Controller\OrgchartController::on'
+  requirements:
+    _permission: 'access content'
